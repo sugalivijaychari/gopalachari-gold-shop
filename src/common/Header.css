@@ -33,8 +33,47 @@
   }
   
   .header-right nav ul li {
-    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .header-right nav ul li .nav-link {
     color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  
+  .header-right nav ul li .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .header-right nav ul li .nav-link.active {
+    color: black; /* Change active link color to black */
+  }
+
+  .header-right nav ul li .nav-link.active::after {
+    width: 100%; /* Full underline for active link */
+    left: 0;
+  }
+  .header-right nav ul li .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: gold;
+    transition: all 0.3s ease;
+  }
+  
+  .header-right nav ul li .nav-link:hover::after {
+    width: 100%;
+    left: 0;
   }
   
   @media (max-width: 768px) {

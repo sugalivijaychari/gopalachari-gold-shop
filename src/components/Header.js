@@ -1,22 +1,42 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import '../common/Header.css';
 
 function Header() {
   return (
     <header className="header">
       <div className="header-left">
-        {/* Replace the text with the logo */}
         <img src="/logo-withoutbg.png" alt="Gopalachari Gold Shop Logo" className="logo" />
         <h1>Gopalachari Gold Shop</h1>
       </div>
       <div className="header-right">
         <nav>
           <ul>
-            <li>Home</li>
-            <li>Ornaments</li>
-            <li>Pricing</li>
-            <li>Offers</li>
-            <li>About Us</li>
+            <li>
+              <NavLink exact to="/" className="nav-link" activeClassName="active">
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/collection" className="nav-link" activeClassName="active">
+                Collection
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/pricing" className="nav-link" activeClassName="active">
+                Pricing
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/offers" className="nav-link" activeClassName="active">
+                Offers
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/about" className="nav-link" activeClassName="active">
+                About Us
+              </NavLink>
+            </li>
           </ul>
         </nav>
       </div>

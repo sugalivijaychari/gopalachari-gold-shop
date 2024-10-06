@@ -4,6 +4,7 @@
   
   .collection h2 {
     margin-bottom: 30px; /* Space below the "Our Collection" heading */
+    text-align: center;
   }
   
   .collection-items {
