@@ -1,0 +1,58 @@
+.price-section {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    margin-top: 50px; 
+  }
+  
+  
+  .gold-section, .silver-section {
+    flex: 1;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gold-section {
+    background-image: url('/public/gold.png'); /* Replace with your gold image URL */
+    background-color: #ffd700; /* Fully opaque gold background */
+  }
+  
+  .silver-section {
+    background-image: url('/public/silver.png'); /* Replace with your silver image URL */
+    background-color: #c0c0c0; /* Fully opaque silver background */
+  }
+  
+  .gold-section h2, .gold-section p {
+    background-color: #ffd700; /* Fully opaque gold background */
+    border: 1px solid #ffd700; /* Gold border */
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    margin-bottom: 5px;
+  }
+  
+  .silver-section h2, .silver-section p {
+    background-color: #c0c0c0; /* Fully opaque silver background */
+    border: 1px solid #c0c0c0; /* Silver border */
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    margin-bottom: 5px;
+  }
+  
+  
+  /* Further reduce the margin of the h2 element specifically */
+  .gold-section h2, .silver-section h2 {
+    margin-bottom: 5px; /* Reduce the bottom margin for the heading */
+  }
+  
+  .gold-section p, .silver-section p {
+    margin-bottom: 0; /* Remove extra margin for the paragraph */
+  }
+  

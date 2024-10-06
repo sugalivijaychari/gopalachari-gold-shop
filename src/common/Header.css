@@ -1,0 +1,68 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #8b5e34;
+    color: white;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 70px;
+    height: auto;
+    margin-right: 10px; /* Adds space between logo and heading */
+  }
+  
+  .header-left h1 {
+    color: gold;
+    margin: 0;
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+  
+  .header-right nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header-right nav ul li {
+    cursor: pointer;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column; /* Stack items vertically on small screens */
+      text-align: center;
+    }
+  
+    .header-left {
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  
+    .header-right nav ul {
+      flex-direction: column; /* Stack navigation links vertically */
+      gap: 10px; /* Smaller gap between links */
+    }
+  
+    .header-right nav ul li {
+      font-size: 18px; /* Adjust font size for mobile */
+    }
+  
+    .logo {
+      width: 50px; /* Reduce logo size for mobile */
+    }
+  
+    .header-left h1 {
+      font-size: 20px; /* Smaller font size for mobile screens */
+    }
+  }
+  
